@@ -24,6 +24,6 @@ app.use('/img', express.static(path.resolve(__dirname, "assests/img")));
 app.use('/js', express.static(path.resolve(__dirname, "assests/js")));
 
 app.get('/', (req,res)=>{
-res.send("Customer service application")
+    res.render('index.ejs');
 })
 
