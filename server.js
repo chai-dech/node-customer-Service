@@ -1,6 +1,7 @@
 const express = require('express');
 const dotenv = require('dotenv');
 const morgan = require('morgan');
+const path = require('path');
 const app = express();
 
 dotenv.config({path: 'config.env'})
@@ -16,6 +17,11 @@ app.use(morgan('tiny'));
 app.use(express.urlencoded({ extended: true }));
 //set view engine
 app.set('view engine', 'ejs');
+
+//load assests
+app.use('/css', express.static(path.resolve(__dirname, "assests/css")));
+app.use('/img', express.static(path.resolve(__dirname, "assests/img")));
+app.use('/js', express.static(path.resolve(__dirname, "assests/js")));
 
 app.get('/', (req,res)=>{
 res.send("Customer service application")
