@@ -4,7 +4,7 @@
     --dark: #2b2d42;
     --light: #adb5bd;
     --border: #dee2e6;
-    --border-btn: #edf2f4;
+    --border-btn: #e5ecf0;
 }
 
 * {
@@ -31,4 +31,25 @@ a {
 .d-flex{
     display: flex;
     flex-wrap: wrap;
+}
+
+justify-between {
+    justify-content: space-around;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.border-shadow{
+    border: 3px solid var(--border-btn);
+    box-shadow: 1px 3px 5px #e9ecef;
+}
+
+.text-dark{
+    color: var(--dark);
+}
+
+.inline{
+    display: inline-table;
 }
