@@ -23,14 +23,4 @@ app.use('/css', express.static(path.resolve(__dirname, "assests/css")));
 app.use('/img', express.static(path.resolve(__dirname, "assests/img")));
 app.use('/js', express.static(path.resolve(__dirname, "assests/js")));
 
-app.get('/', (req,res)=>{
-    res.render('index.ejs');
-})
-
-app.get('/add_user', (req,res)=>{
-    res.render('add_user.ejs');
-})
-
-app.get('/update_user', (req,res)=>{
-    res.render('update_user.ejs');
-})
+app.use('/', require('./server/routes/router.js'));
