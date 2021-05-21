@@ -59,15 +59,16 @@ justify-between {
 }
 
 .text-gradient{
-    background: linear-gradient(#b481e0);
+    background: linear-gradient( #8e2de2);
     -webkit-background-clip: text;
     background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #header nav{
     background-color: #06d6a0;
-    padding: 3em 0;
-    width: 50%;
+    padding: 1em 0;
+    width: 100%;
 }
 
 #site-main{
@@ -89,6 +90,7 @@ table{
     width: 100%;
 }
 
+
 .table td, .table th{
     padding: .75em;
     vertical-align: top;
@@ -96,6 +98,11 @@ table{
     border-top: 1px solid var(--border);
 }
 
+.table .thead-dark th{
+    color: #fff;
+    background-color: var(--dark) ;
+    border-color: #32383e;
+}
 .table td > a.btn{
     padding: .3em 1em;
     font-size: 1.1em;
@@ -108,10 +115,4 @@ table{
 
 .table tr:hover td > a{
     box-shadow: none;
-}
-
-.table .thead-dark th{
-    color: #fff;
-    background-color: var(--dark) ;
-    border-color: #32383e;
 }
