@@ -32,5 +32,5 @@ app.get('/add_user', (req,res)=>{
 })
 
 app.get('/update_user', (req,res)=>{
-    res.render('add_user.ejs');
+    res.render('update_user.ejs');
 })
