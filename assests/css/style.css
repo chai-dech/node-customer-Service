@@ -34,7 +34,7 @@ a {
 }
 
 justify-between {
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .text-center{
@@ -42,8 +42,8 @@ justify-between {
 }
 
 .border-shadow{
-    border: 3px solid var(--border-btn);
-    box-shadow: 1px 3px 5px #e9ecef;
+    border: 1px solid var(--border-btn);
+    box-shadow: 1px 3px 10px #e9ecef;
 }
 
 .text-dark{
@@ -51,5 +51,5 @@ justify-between {
 }
 
 .inline{
-    display: inline-table;
+    display: inline-block;
 }
