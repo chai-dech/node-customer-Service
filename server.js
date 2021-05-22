@@ -3,7 +3,7 @@ const dotenv = require('dotenv');
 const morgan = require('morgan');
 const path = require('path');
 const app = express();
-
+const connectDb = require('./server/database/connection');
 dotenv.config({path: 'config.env'})
 const Port = process.env.Port;
 
@@ -17,6 +17,8 @@ app.use(morgan('tiny'));
 app.use(express.urlencoded({ extended: true }));
 //set view engine
 app.set('view engine', 'ejs');
+//connect to db
+connectDb();
 
 //load assests
 app.use('/css', express.static(path.resolve(__dirname, "assests/css")));
