@@ -5,13 +5,13 @@ var schema = new mongoose.Schema({
         type: String,
         required: true
     },
-    emailId: {
+    email: {
         type: String,
         required: true,
         unique: true
     },
     contact: {
-        type: String,
+        type: Number,
         required: true
     },
     address: {

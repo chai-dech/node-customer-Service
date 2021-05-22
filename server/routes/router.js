@@ -1,6 +1,6 @@
 const express = require('express');
 const route = express.Router();
-const controller = require('./server/controller/api');
+const controller = require('../controller/api');
 
 route.get('/', (req,res)=>{
     res.render('index.ejs');
