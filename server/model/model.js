@@ -10,12 +10,12 @@ var schema = new mongoose.Schema({
         required: true,
         unique: true
     },
-    contact: {
-        type: Number,
-        required: true
-    },
     address: {
         type: String,
+        required: true
+    },
+    contact: {
+        type: Number,
         required: true
     }
 })
